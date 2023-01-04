@@ -6,22 +6,13 @@ public  class Laptop extends Computer{
     }
 
     @Override
-    public void turOn() {
-
+    public void turnOn() {
+        System.out.println("Turning on");
     }
 
     @Override
-    public void turOff() {
-
+    public void turnOff() {
+        System.out.println("Turning off");
     }
-
-
-    @Override
-    public void portable() {
-        System.out.println(getBrand() + " is portable");
-
-    }
-
-
 
 }

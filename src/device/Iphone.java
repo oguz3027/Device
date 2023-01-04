@@ -1,6 +1,6 @@
 package device;
 
-public class Iphone extends Phone implements Downloadable,AppleApps{
+public class Iphone extends Phone implements AppleApps{
 
 
     public Iphone(String model, double price, String color, String size, boolean hasBattery, boolean hasPowerButton) {
@@ -18,7 +18,7 @@ public class Iphone extends Phone implements Downloadable,AppleApps{
     }
 
     @Override
-    public void downloadApp() {  // comes from Downloadable
+    public void downloadable() {  // comes from Downloadable
         System.out.println("You cn use Play Store");
     }
 }

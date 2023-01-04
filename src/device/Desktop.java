@@ -5,18 +5,14 @@ public class Desktop extends Computer{
         super(brand, model, price, color, size, hasBattery, hasPowerButton);
     }
 
-    @Override
-    public void portable() {
 
+    @Override
+    public void turnOn() {
+        System.out.println("Turning on in 2 seconds");
     }
 
     @Override
-    public void turOn() {
-
-    }
-
-    @Override
-    public void turOff() {
-
+    public void turnOff() {
+        System.out.println("Turning off in 2 seconds");
     }
 }

@@ -6,18 +6,12 @@ public class PersonalComputer extends Computer {
     }
 
     @Override
-    public void portable() {
-
-
+    public void turnOn() {
+        System.out.println("Turn on in 5 sec.");
     }
 
     @Override
-    public void turOn() {
-
-    }
-
-    @Override
-    public void turOff() {
-
+    public void turnOff() {
+        System.out.println("Turn off in 5 sec.");
     }
 }

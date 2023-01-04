@@ -1,6 +1,6 @@
 package device;
 
-public class Google extends Phone implements Downloadable, AndroidApps{
+public class Google extends Phone implements AndroidApps {
 
     public Google(String model, double price, String color, String size, boolean hasBattery, boolean hasPowerButton) {
         super("Google", model, price, color, size, hasBattery, hasPowerButton);
@@ -17,7 +17,7 @@ public class Google extends Phone implements Downloadable, AndroidApps{
     }
 
     @Override
-    public void downloadApp() {  // comes from Downloadable
+    public void downloadable() {  // comes from Downloadable
         System.out.println("You can also use G Store");
     }
 }

@@ -1,6 +1,6 @@
 package device;
 
-public class Samsung extends Phone implements Downloadable, AndroidApps{
+public class Samsung extends Phone implements AndroidApps{
     public Samsung( String model, double price, String color, String size, boolean hasBattery, boolean hasPowerButton) {
         super("Samsung", model, price, color, size, hasBattery, hasPowerButton);
     }
@@ -16,7 +16,7 @@ public class Samsung extends Phone implements Downloadable, AndroidApps{
     }
 
     @Override
-    public void downloadApp() {  // comes from Downloadable
+    public void downloadable() {  // comes from Downloadable
         System.out.println("You can also use Play Store");
     }
 }
