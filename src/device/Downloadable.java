@@ -1,8 +1,8 @@
 package device;
 
-public class Downloadable {
+public abstract interface Downloadable {
 
-    void Downloadable(){};
+    void Downloadable();
 
 
 }
