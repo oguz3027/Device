@@ -10,7 +10,10 @@ public abstract class Phone extends Device{
     }
 
     public void setPhoneNumber(long phoneNumber) {
-
+        String number = "" + phoneNumber;
+        if(number.length()!=11){
+            throw new RuntimeException("Invalid number : " + phoneNumber);
+        }
         this.phoneNumber = phoneNumber;
     }
     // constructor
